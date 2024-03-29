@@ -33,5 +33,8 @@ describe('AppController', () => {
       expect(appController.add("-1, 2")).toBe(1);
     });
 
+    it('if we have any charector other than , it should return undefined', () => {
+      expect(appController.add("1, 2/")).toBe(undefined);
+    });
   });
 });
