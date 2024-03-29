@@ -16,5 +16,8 @@ describe('AppController', () => {
     it('add "" should be 0', () => {
       expect(appController.add("")).toBe(0);
     });
+    it('add "1" should be 1', () => {
+      expect(appController.add("1")).toBe(1);
+    });
   });
 });
