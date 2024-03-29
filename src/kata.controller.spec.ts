@@ -22,5 +22,9 @@ describe('AppController', () => {
     it('add "1,2" should be 1', () => {
       expect(appController.add("1,2")).toBe(3);
     });
+
+    it('add "1, 2" should be 1', () => {
+      expect(appController.add("1, 2")).toBe(3);
+    });
   });
 });
